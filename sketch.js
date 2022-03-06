@@ -29,13 +29,13 @@ function setup() {
     frog.scale = 0.3
     frog.depth = 1
 
-    restart = createSprite(1850, 45);
+    restart = createSprite(width/2, 45);
     restart.addImage(restartImg);
 
     score = 0
     score.depth = 2
 
-    background1 = createSprite(960, 500, 50, 50)
+    background1 = createSprite(width/2, height/2,width,height)
     background1.addImage(backgroundImg)
     background1.depth = -1
     background1.scale = 2
@@ -43,11 +43,11 @@ function setup() {
     
 
 
-    ground = createSprite(200, 1170, 400, 20);
+    ground = createSprite(width/2, height-60, width, 60);
     ground.addImage("ground", groundImage);
 
 
-    invisibleGround = createSprite(200, 827, 400, 20);
+    invisibleGround = createSprite(200,height-70 , 400, 20);
     invisibleGround.visible = false;
 
     crocodilesGroup = createGroup();
