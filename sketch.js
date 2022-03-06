@@ -20,7 +20,7 @@ function preload() {
 }
 
 function setup() {
-    createCanvas(windowWidth, windowHeight);
+    createCanvas(displayWidth, displayHeight);
     frog = createSprite(300, 700, 50, 50)
     frog.addAnimation("running", frog_running)
     frog.addAnimation("dead", frog_dead)
